@@ -173,6 +173,9 @@ FILTER_FOR_DBFIELD_DEFAULTS = {
                 f.rel.limit_choices_to),
         }
     },
+    models.AutoField: {
+        'filter_class': NumberFilter,
+    },
     models.DecimalField: {
         'filter_class': NumberFilter,
     },
